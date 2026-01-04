@@ -1,0 +1,103 @@
+nav:
+  logo: /image/哈士奇.png
+  display_title: true
+  fixed: false # fixed navigation bar    
+post_asset_folder: true  
+menu:
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  清单||fa fa-heartbeat:
+    音乐: /music/ || fas fa-music
+    照片: /Gallery/ || fas fa-images
+    电影: /movies/ || fas fa-video
+  资源: /resouces 
+
+#头像
+avatar:
+  img: /image/profile_photo.jpg
+  # effect: true # 头像会一直转，转的贼快，太鬼畜了
+
+#顶部图
+index_img: /image/LABUBU.png
+default_top_img: /image/LABUBU.png
+# index_top_img_height: 400px #顶部图高度
+
+#运行时间
+#publish_date 就是你博客的创建时间，格式是 日/月/年 
+runtimeshow:
+  enable: true
+  publish_date: 1/7/2025 00:00:00
+
+#本地搜索
+search:
+  use: local_search
+  placeholder:
+
+  local_search:
+    enable: true
+    # Preload the search data when the page loads.
+    preload: false
+    # Show top n results per article, show all results by setting to -1
+    top_n_per_article: 1
+    # Unescape html strings to the readable one.
+    unescape: true
+    CDN:
+
+#背景特效
+canvas_nest:
+  enable: false
+  # Color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+  color: '0,0,255'
+  # The opacity of line (0~1)
+  opacity: 0.7
+  # The z-index property of the background
+  zIndex: 1
+  # The number of lines
+  count: 99
+  mobile: false
+
+canvas_fluttering_ribbon:
+  enable: true
+  mobile: false # false 手机端不显示 true 手机端显示
+
+# 點擊出現愛心
+click_heart:
+  enable: true
+  mobile: false
+
+# 主页subtitle
+subtitle:
+  enable: true
+  # Typewriter Effect (打字效果)
+  effect: true
+  startDelay: 300 # time before typing starts in milliseconds
+  typeSpeed: 200 # type speed in milliseconds
+  backSpeed: 800 # backspacing speed in milliseconds
+  # loop (循环打字)
+  loop: true
+  # source 调用三方服务
+  # source: false 开关调用
+  # subtitle 会先显示 source , 再显示 sub 的內容
+  source: true
+  # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
+  sub:
+    - 自小刺头深草里 &#44; 而今渐觉出蓬蒿
+    - 时人不识凌云木 &#44; 直待凌云始道高
+
+#加载动画
+preloader:
+  enable: true
+  source: 1 #可选值1=fullpage或2=progress bar，可查看https://codebyzach.github.io/pace/
+  pace_css_url: 
+
+#池塘养鱼
+inject:
+  head:
+    - <link rel="stylesheet" href="/styles/main.css">
+    - <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  bottom:
+    - <script src="/styles/fish.js"></script>
+
+favicon: /image/哈士奇.png
